@@ -12,3 +12,4 @@ btn.addEventListener(`click`, () => {
   document.body.style.backgroundColor = randomColor;
   span.textContent = randomColor;
 });
+//

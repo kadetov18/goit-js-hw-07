@@ -43,3 +43,4 @@ images.forEach((imege) => {
   listItem.appendChild(imgEl);
   galleryEl.appendChild(listItem);
 });
+//

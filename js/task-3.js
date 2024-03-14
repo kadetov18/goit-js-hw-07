@@ -6,3 +6,4 @@ nameInput.addEventListener("input", (event) => {
   const eventInput = event.target.value.trim();
   nameOutput.textContent = eventInput || "Anonymous";
 });
+//
