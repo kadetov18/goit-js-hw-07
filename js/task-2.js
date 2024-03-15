@@ -32,15 +32,20 @@ galleryEl.style.flexWrap = `wrap`;
 galleryEl.style.gap = `24px`;
 galleryEl.style.listStyleType = "none";
 
-images.forEach((imege) => {
+const fragment = document.createDocumentFragment();
+
+images.forEach((image) => {
   const listItem = document.createElement(`li`);
   const imgEl = document.createElement(`img`);
 
-  imgEl.alt = imege.alt;
-  imgEl.src = imege.url;
+  imgEl.alt = image.alt;
+  imgEl.src = image.url;
   imgEl.width = 360;
   imgEl.height = 300;
   listItem.appendChild(imgEl);
-  galleryEl.appendChild(listItem);
+  fragment.appendChild(listItem);
 });
+
+galleryEl.appendChild(fragment);
+
 //
